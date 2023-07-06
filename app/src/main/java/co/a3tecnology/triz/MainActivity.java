@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import co.a3tecnology.backlog.DebugLog;
+import co.a3tecnology.backlog.RebugLog;
+import co.a3tecnology.crashlog.CrashLog;
+import co.a3tecnology.newlibrary.NewLog;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,7 +16,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        DebugLog.print("olá Mundo");
-
+        CrashLog.print("oi");
+        NewLog.print("oi");
+        RebugLog.print("oi");
     }
 }
